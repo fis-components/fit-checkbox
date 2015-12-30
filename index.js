@@ -152,7 +152,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                'disabled': this.props.disabled
 	            });
 
-	            return _react2.default.createElement(
+	            var childs = _react2.default.createElement(
 	                'label',
 	                { style: this.props.style,
 	                    className: classname },
@@ -167,6 +167,22 @@ return /******/ (function(modules) { // webpackBootstrap
 	                    this.props.children
 	                )
 	            );
+
+	            if (!_.isEmpty(this.props.label)) {
+	                childs = _react2.default.createElement(
+	                    'div',
+	                    { className: 'form-container' },
+	                    _react2.default.createElement(
+	                        'label',
+	                        { style: { width: this.props.labelWidth || null },
+	                            className: 'form-control-label' },
+	                        this.props.label
+	                    ),
+	                    childs
+	                );
+	            }
+
+	            return childs;
 	        }
 	    }]);
 
