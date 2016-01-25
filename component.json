@@ -1,15 +1,15 @@
 {
     "name": "fit-checkbox",
     "description": "多选框",
-    "repos": "https://github.com/2betop/placeholder.git",
+    "repos": "https://github.com/tb-component/pc-checkbox.git",
     "main": "lib/index.js",
     "tag": "master",
     "reposType": "npm",
     "dependencies": {
         "classnames": "^2.2.1",
-        "fit-style": "^1.1.10",
+        "fit-style": "^1.1.12",
         "lodash": "^3.10.1",
         "react": "^0.14.3"
     },
-    "version": "1.1.13"
+    "version": "1.1.14"
 }
